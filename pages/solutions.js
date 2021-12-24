@@ -1,6 +1,13 @@
 import Head from 'next/head'
+import { useEffect } from 'react'
+import gsap from "gsap"
 
 export default function Solution() {
+
+  useEffect(() => {
+    gsap.to(".container", {duration: 0, css: {display: "block"}})
+  },[])
+
   return (
     <div>
         <Head>
